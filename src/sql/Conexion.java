@@ -16,7 +16,7 @@ public class Conexion {
     private Connection conexion = null;
     private Statement stat = null;
     
-    public Conexion getInstancia() {
+    public static Conexion getInstancia() {
         if(instancia == null)
             instancia = new Conexion();
         return instancia;
