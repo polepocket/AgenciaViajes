@@ -8,24 +8,30 @@ package agenciaviajes;
 import java.sql.*;
 import sql.Conexion;
 
-
 /**
  *
  * @author gracho
  */
 public class Usuario {
+
     private Conexion con;
     private Statement stat;
     private String nombre, contrasenia, rol;
-    
-    public boolean login(String nombre, String contra) throws SQLException {
+
+    public boolean login(String nombre, String contra) throws SQLException, ClassNotFoundException {
         con = Conexion.getInstancia();
+        con.conectar();
         stat = con.getStatement();
-        String sql = "select * from usuario where nombre = " + nombre + " and contrasenia = " + contra;
+        String sql = "select id from usuario where nombre = '" + nombre + "' and contrasenia = '" + contra + "';";
+        System.out.println(sql);
         ResultSet res = stat.executeQuery(sql);
-        int id = res.getInt(0);
-        if(id > 0)
+        res.next();
+        int id = res.getInt("id");
+        if (id > 0){
+            con.desconectar();
             return true;
+        }
+        con.desconectar();
         return false;
     }
 }
