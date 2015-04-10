@@ -3,13 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package agenciaviajes;
+package tours;
+
+import agencia.Lugar;
+import agencia.Tour;
 
 /**
  *
  * @author gracho
  */
-public class Valles extends Tour {
+public class TodasLasRegiones extends Tour {
 
     @Override
     public Lugar[] getLugares() {

@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package agenciaviajes;
+package lugares;
 
 /**
  *
  * @author gracho
  */
-public abstract class Lugar {
-    private String nombre, clima, region, ubicacion;
+public class Zuzul {
     
-    public abstract void tiempoDesde(Lugar origen);
 }

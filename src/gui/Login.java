@@ -5,7 +5,7 @@
  */
 package gui;
 
-import agenciaviajes.Usuario;
+import agencia.Usuario;
 import java.awt.Image;
 import java.sql.SQLException;
 import java.util.logging.Level;

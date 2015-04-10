@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package agenciaviajes;
+package lugares;
+
+import agencia.Lugar;
 
 /**
  *
  * @author gracho
  */
-public class PuertoEscondido extends Lugar {
+public class Huatulco extends Lugar {
 
     @Override
     public void tiempoDesde(Lugar origen) {

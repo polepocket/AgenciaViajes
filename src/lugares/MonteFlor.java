@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package agenciaviajes;
+package lugares;
 
 /**
  *
  * @author gracho
  */
-public class Papaloapan {
+public class MonteFlor {
     
 }
