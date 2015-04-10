@@ -6,6 +6,7 @@
 package gui;
 
 import agenciaviajes.Usuario;
+import java.awt.Image;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -43,6 +44,7 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Autentificación");
+        setIconImage(img);
         setLocation(new java.awt.Point(500, 300));
 
         login.setFont(new java.awt.Font("Lucida Sans", 1, 18)); // NOI18N
@@ -199,4 +201,6 @@ public class Login extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     private Usuario usuario;
     private Inicio inicio;
+    private ImageIcon icon = new ImageIcon("icons/16.png");
+    private Image img = icon.getImage();
 }

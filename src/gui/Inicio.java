@@ -5,6 +5,9 @@
  */
 package gui;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author gracho
@@ -29,6 +32,7 @@ public class Inicio extends javax.swing.JFrame implements Runnable {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inicio");
+        setIconImage(img);
         setLocation(new java.awt.Point(320, 150));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -56,4 +60,6 @@ public class Inicio extends javax.swing.JFrame implements Runnable {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
+    private ImageIcon icon = new ImageIcon("icons/inicio.png");
+    private Image img = icon.getImage();
 }
