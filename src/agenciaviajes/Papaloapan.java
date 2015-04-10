@@ -9,8 +9,6 @@ package agenciaviajes;
  *
  * @author gracho
  */
-public abstract class Lugar {
-    private String nombre, clima, region, ubicacion;
+public class Papaloapan {
     
-    public abstract void tiempoDesde(Lugar origen);
 }

@@ -9,8 +9,11 @@ package agenciaviajes;
  *
  * @author gracho
  */
-public abstract class Lugar {
-    private String nombre, clima, region, ubicacion;
+public class Manialtepec extends Lugar {
+
+    @Override
+    public void tiempoDesde(Lugar origen) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
-    public abstract void tiempoDesde(Lugar origen);
 }

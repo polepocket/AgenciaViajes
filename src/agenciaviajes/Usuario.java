@@ -23,14 +23,10 @@ public class Usuario {
         con.conectar();
         stat = con.getStatement();
         String sql = "select id from usuario where nombre = '" + nombre + "' and contrasenia = '" + contra + "';";
-        System.out.println(sql);
+        //System.out.println(sql);
         ResultSet res = stat.executeQuery(sql);
-        res.next();
-        int id = res.getInt("id");
-        if (id > 0){
-            con.desconectar();
+        if(res.next())
             return true;
-        }
         con.desconectar();
         return false;
     }
