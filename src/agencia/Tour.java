@@ -14,6 +14,7 @@ import java.util.Iterator;
  */
 public abstract class Tour extends Lugar implements Iterator {
     private ArrayList<Lugar> lugares;
+    private String descripcion;
     private int in;
     
     public abstract Lugar[] getLugares();
